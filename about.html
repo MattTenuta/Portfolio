@@ -8,51 +8,100 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="head">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Matthew Tenuta Logo">
+            </div>
+        <nav class="one-item full" aria-label="Main Navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <li><a class="nav-element" href="about.html">About</a></li>
+                <li><a class="active nav-element" href="index.html">Portfolio</a></li>
+                <li><a class="nav-element" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
+        <!-- Mobile Menu -->
+       <div class="mobile tablet">
+        <input type="checkbox" id="overlay-input"/>
+        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <div id="overlay">
+            <ul>
+                <li><a class="active" href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End Mobile Menu -->
     </header>
 
-    <main id="app">
+    <main class="main" id="app">
 
+        <div class="pad">
+            <h2 class="one-item">A Little About Myself</h2>
+        </div>
         <section>
             <h2 class="hidden">About Me</h2>
-            <h2></h2>
-            <div>
-                <p></p>
-                <img>
+            <div class="one-item pad">
+                <img src="images/480x480.png">
+                <p class="mobileAboutText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </section>
 
         <div></div> <!-- Bar -->
 
+        <div class="pad">
+            <h2 class="one-item center skillsTitle">The Skills That Pay The Bills</h2>
+        </div>
         <section>
             <h2 class="hidden">Skills</h2>
-            <h2></h2>
-            <div>
-                <h3></h3>
-                <img>
-                <img>
-                <img>
-                <img>
-            </div>
-            <div>
-                <h3></h3>
-                <img>
-                <img>
-                <img>
-            </div>
+                <div class="one-item">
+                    <h3 class="center designTitle">Design</h3>
+                </div>
+                    <div class="one-item pad">
+                        <img src="images/designLogos/photoshop.png">
+                        <h3 class="designText center">Photoshop</h3>
+                        <img src="images/designLogos/illustrator.png">
+                        <h3 class="designText center">Illustrator</h3>
+                        <img src="images/designLogos/xd.png">
+                        <h3 class="designText center">XD</h3>
+                        <img src="images/designLogos/indesign.png">
+                        <h3 class="designText center">InDesign</h3>
+                    </div>
+                <div class="one-item">
+                    <h3 class="center designTitle">Motion</h3>
+                </div>
+                <div class="one-item pad">
+                    <img src="images/designLogos/cinema.png">
+                    <h3 class="designText center">Cinema 4D</h3>
+                    <img src="images/designLogos/afftereffects.png">
+                    <h3 class="designText center">After Effects</h3>
+                    <img src="images/designLogos/premiere.png">
+                    <h3 class="designText center">Premiere Pro</h3>
+                </div>
         </section>
 
-        <div>
+        <div class="pad">
             <h3 class="hidden">Contact Button</h2>
-            <h2></h2>
-            <a></a> <!-- heck yes button -->
+            <h2 class="one-item smallPad">Do You Want To Get In Contact?</h2>
+            <div class="heckYes pad one-item">
+                <a class="center" href="contact.html"><h2 class="heckYesText">Heck Yeah</h2></a>
+            </div> <!-- heck yes button -->
         </div>
-
     </main>
 
     <footer>
-
+        <section class="pad">
+            <h2 class="hidden">Footer</h2>
+            <div class="one-item">
+                <p class="footerText"> © 2022 Matthew Tenuta. All Rights Reserved.</p>
+            </div>
+            <div class="padFoot two-items">
+                <a href="#"><img class="git padFoot" src="images/github.svg" alt="Github Logo"></a> <!-- Github Link -->
+                <a href="#"><img class="link padFoot" src="images/linkdin.svg" alt="Linkdin Logo"></a> <!-- Linkdin Link -->
+            </div>
+        </section>
     </footer>
     
 </body>
