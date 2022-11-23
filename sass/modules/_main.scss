@@ -80,6 +80,10 @@ input, textarea {
    padding-top: 1em;
   }
 
+  .topPad2 {
+    padding-top: 2em;
+  }
+
   .flex {
    display: flex;
   }
@@ -242,6 +246,31 @@ input, textarea {
          justify-self: center;
         }
 
+        .whiteBorder {
+          border: 3px solid white;
+        }
+
+        .borderBottom {
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom:4px solid #00aeef;
+          padding-bottom: .5em;
+        }
+
+        .borderBottomThiner {
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom:3px solid #00aeef;
+          padding-bottom: .5em;
+        }
+
+        .borderBottomThin {
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom:2px solid #00aeef;
+          padding-bottom: .5em;
+        }
+
         .skillsTitle {
          font-size: 2em;
          text-align: center;
@@ -252,7 +281,16 @@ input, textarea {
         }
 
         .designText {
-         font-size: 1em;
+         font-size: 1.5em;
+        }
+
+        .programsText {
+          font-size: 1.5em;
+          text-align: center;
+        }
+
+        .contactText {
+          font-size: 1.2em;
         }
 
         .heckYes {
@@ -263,6 +301,10 @@ input, textarea {
         .heckYesText {
          color: white;
         }
+
+        .heckYesText:hover {
+          color: #00aeef;
+         }
     
     
        /*------------ End Mobile ------------*/
