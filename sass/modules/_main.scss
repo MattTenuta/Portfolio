@@ -1,39 +1,338 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* -------------
+  Reset
+-------------*/
+
+body {
+   margin: 0;
+   padding: 0;
+   animation: bugfix infinite 1s;
+   -webkit-animation: bugfix infinite 1s;
+   
+}
+
+h1, h2, h3, h4, p {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+   .hidden {
+      display: none;
+  }
+
+  .pad {
+   padding: 2em;
+  }
+
+  .smallPad {
+   padding: .5em;
+  }
+
+  .topPad {
+   padding-top: 1em;
+  }
+
+  .flex {
+   display: flex;
+  }
+
+  .box-model {
+     margin: 1rem;
+     padding: 1rem;
+     background: rgb(211, 211, 211);
+  }
+
+  img {
+     display: block;
+     width: 100%;
+  }
+
+  /*------------ Floats ------------*/
+
+  .f-left {
+   float: left;
+}
+
+.f-right {
+   float: right;
+}
+
+/*------------ End Floats ------------*/
+
 .hidden {
     display: none;
 }
 
-@supports (grid-area: auto) {
+/* _____________________________________
 
-    .site {
-       max-width: none;
+   03. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+      /*------------ Grid Items ------------*/
+    
+          .head, .main > *, .foot {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 24em)) 1fr;
+          }
+    
+          .fluid {
+            display: grid;
+            grid-column: 1 / span 4;
+            grid-template-columns: 1fr;
+          }
+    
+          .one-item {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: 1fr;
+          }
+    
+          .two-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+    
+          .three-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+    
+          .four-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+    
+          .off-set-third {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: .3fr .7fr;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+    
+          .third-off-set {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: .7fr .3fr;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+    
+          @media screen and (max-width: 47.9375em) {
+            .s-one-item {
+              display: grid;
+              grid-column: 2 / span 2;
+              grid-template-columns: 1fr !important;
+            }
+          }
+    
+          @media screen and (min-width: 48em) and (max-width: 63.98em) {
+            .four-items {
+              grid-template-columns: repeat(2, 1fr) !important;
+            }
+          }
+          
+      /*------------ End Grid Items ------------*/
+    
+      /* _____________________________________
+    
+       04. Mobile
+      _____________________________________ */
+       
+        .site {
+          max-width: 47.9375em;
+        }
+    
+        .full {
+          display: none;
+        }
+    
+        .tablet {
+          display: grid;
+        }
+    
+        .mobile {
+          display: grid;
+        }
+    
+        /* Hero */
+    
+        .hero {
+          margin: 0 0;
+        }
+    
+        .hero-img img {
+          width: 100%
+        }
+    
+        .hero-img {
+          display: grid;
+          grid-column: 2 / span 2;
+          margin-bottom: 1rem; /* google REM */
+        }
+    
+        .hero-img > * {
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        .center {
+         justify-self: center;
+        }
+
+        .skillsTitle {
+         font-size: 2em;
+         text-align: center;
+        }
+
+        .designTitle {
+         font-size: 1.5em;
+        }
+
+        .designText {
+         font-size: 1em;
+        }
+
+        .heckYes {
+         background-color: rgb(83, 83, 151);
+         border-radius: 1.5em;
+        }
+
+        .heckYesText {
+         color: white;
+        }
+    
+    
+       /*------------ End Mobile ------------*/
+    
+      /* _____________________________________
+    
+       05. Tablet
+       _____________________________________ */
+    
+       @media screen and (min-width: 48em) and (max-width: 63.98em) {
+    
+        .head, .main > *, .foot {
+          display: grid;
+          grid-template-columns: 1fr repeat(2, minmax(auto, 31.99em)) 1fr;
+        }
+    
+        .site {
+          max-width: none;
+        }
+    
+        .full {
+          display: none;
+        }
+    
+        .tablet {
+          display: grid;
+        }
+    
+        .mobile {
+          display: grid;
+        }
+    
+        /* Hero */
+    
+        .hero-img {
+          grid-column: span 4;
+        }
+    
+       }
+    
+      /* _____________________________________
+    
+       06. Desktop
+       _____________________________________ */
+    
+       @media screen and (min-width: 64em) {
+    
+          .head, .main > *, .foot {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 50em)) 1fr;
+          }
+      
+          .site {
+            max-width: none;
+          }
+      
+          .full {
+            display: grid;
+          }
+      
+          .tablet {
+            display: none;
+          }
+      
+          .mobile {
+            display: none;
+          }
+    
+       }  
+       
+       /*------------ End Desktop Items ------------*/
+    
     }
-
-    /*------------ Grid Items ------------*/
-
-    .head, .main > *, .foot {
-       display: grid;
-          grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
-    }
-
-    .one-item {
-       display: grid;
-       grid-column: 2 / span 2;
-       grid-template-columns: 1fr;
-    }
-
-    .two-items {
-       display: grid;
-       grid-column: 2 / span 2;
-       grid-template-columns: repeat(2, 1fr);
-       justify-content: space-evenly;
-    }
-
-    .three-items {
-       display: grid;
-       grid-column: 2 / span 2;
-       grid-template-columns: repeat(3, 1fr);
-       justify-content: space-evenly;
-       row-gap: 2em;
-       column-gap: 2em;
-    }
-}
