@@ -1,11 +1,9 @@
 .git {
-    width: 80px;
-    height: auto;
+    max-width: 1000px;
 }
 
 .link {
-    width: 80px;
-    height: auto;
+    max-width: 100px;
 }
 
 .padFoot {
@@ -13,8 +11,12 @@
 }
 
 .footerText {
-    font-size: 1em;
+    font-size: 20px;
     align-self: center;
+}
+
+.flex {
+    display: flex;
 }
 
 .footerColor {

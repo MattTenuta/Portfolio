@@ -1,16 +1,32 @@
-.logo {
-    display: flex;
-    width: 200px;
-    padding: 1em;
-}
 
 header {
     position: relative;
     top: 0em;
-    background-color: #fff;
+    background-color: #7395F2;
     border-bottom: 1px solid #e6e6e6;
     box-shadow: 0px 5px 8px #888;
  }
+
+ .logo {
+  max-width: 150px;
+ }
+
+ .logo:hover {
+  cursor: pointer;
+  background-color: #00aeef;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 10px 5px rgb(63, 63, 63);
+  
+}
+
+.colourChange {
+  background-color: white;
+  width: 150px;
+  height: 102.717px;
+}
 
 nav ul {
     margin: 3em 0 0 0;
@@ -55,6 +71,14 @@ nav ul {
     to {
       padding: 0;
     }
+  }
+
+  @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
   }
 
   #overlay-button {
@@ -157,7 +181,7 @@ nav ul {
   #overlay ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.25em;
+    line-height: 2em;
   }
 
   #overlay ul li a:hover {

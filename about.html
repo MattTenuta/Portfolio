@@ -9,15 +9,15 @@
 </head>
 <body>
     <header class="head">
-        <div class="logo">
-            <img src="images/logo.svg" alt="Matthew Tenuta Logo">
+        <div class="pad2 one-item">
+            <a class="colourChange" href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
             </div>
         <nav class="one-item full" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul>
                 <li><a class="nav-element" href="about.html">About</a></li>
-                <li><a class="active nav-element" href="index.html">Portfolio</a></li>
-                <li><a class="nav-element" href="contact.html">Contact</a></li>
+                <li><a class="nav-element" href="index.html">Portfolio</a></li>
+                <li><a class="active nav-element" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -27,9 +27,9 @@
         <label for="overlay-input" id="overlay-button"><span></span></label>
         <div id="overlay">
             <ul>
-                <li><a class="active" href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </div>
         </div>
@@ -44,7 +44,7 @@
         <section>
             <h2 class="hidden">About Me</h2>
             <div class="one-item pad">
-                <img src="images/480x480.png">
+                <img class="aboutImg" src="images/480x480.png">
                 <p class="mobileAboutText topPad">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </section>
@@ -61,24 +61,24 @@
                     <h3 class="center designTitle borderBottomThiner">Design Programs</h3>
                 </div>
                     <div class="one-item pad">
-                        <img src="images/designLogos/photoshop.png">
+                        <img class="imgCenter" src="images/designLogos/photoshop.png">
                         <h3 class="designText center borderBottomThin">Photoshop</h3>
-                        <img src="images/designLogos/illustrator.png">
+                        <img class="imgCenter" src="images/designLogos/illustrator.png">
                         <h3 class="designText center borderBottomThin">Illustrator</h3>
-                        <img src="images/designLogos/xd.png">
+                        <img class="imgCenter" src="images/designLogos/xd.png">
                         <h3 class="designText center borderBottomThin">XD</h3>
-                        <img src="images/designLogos/indesign.png">
+                        <img class="imgCenter" src="images/designLogos/indesign.png">
                         <h3 class="designText center borderBottomThin">InDesign</h3>
                     </div>
                 <div class="one-item">
                     <h3 class="center designTitle topPad2 borderBottomThiner">Motion Design Programs</h3>
                 </div>
                 <div class="one-item pad">
-                    <img src="images/designLogos/cinema.png">
+                    <img class="imgCenter" src="images/designLogos/cinema.png">
                     <h3 class="designText center borderBottomThin">Cinema 4D</h3>
-                    <img src="images/designLogos/afftereffects.png">
+                    <img class="imgCenter" src="images/designLogos/afftereffects.png">
                     <h3 class="designText center borderBottomThin">After Effects</h3>
-                    <img src="images/designLogos/premiere.png">
+                    <img class="imgCenter" src="images/designLogos/premiere.png">
                     <h3 class="designText center borderBottomThin">Premiere Pro</h3>
                 </div>
         </section>
@@ -92,17 +92,14 @@
         </div>
     </main>
 
-    <footer class="footerColor">
-        <section class="pad">
-            <div class="whiteBorder pad">
-                <h2 class="hidden">Footer</h2>
-                <div class="one-item">
-                    <p class="footerText"> © 2022 Matthew Tenuta. All Rights Reserved.</p>
-                </div>
-                <div class="topPad two-items">
-                    <a href="https://github.com/MattTenuta"><img class="git padFoot" src="images/github.svg" alt="Github Logo"></a> <!-- Github Link -->
-                    <a href="https://www.linkedin.com/in/matthew-tenuta-878303232/"><img class="link padFoot" src="images/linkdin.svg" alt="Linkdin Logo"></a> <!-- Linkdin Link -->
-                </div>
+    <footer class="foot footerColor">
+        <section class="two-items">
+            <div class="flex">
+                <p class="footerText centerText pad2">Made With Love &#9829;</p>
+            </div>
+            <div class="flex imgCenter">
+                <a href="https://github.com/MattTenuta"><img class="git pad" src="images/github.svg" alt="GitHub Logo"></a>
+                <a href="https://www.linkedin.com/in/matthew-tenuta-878303232/"><img class="link pad" src="images/linkdin.svg" alt="Linkdin Logo"></a>
             </div>
         </section>
     </footer>
