@@ -10,12 +10,12 @@
 
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header class="head">
-        <div class="pad2 one-item">
-            <a class="colourChange" href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
-            </div>
-        <nav class="one-item full" aria-label="Main Navigation">
+<body class="bckgrd">
+    <header class="head two-items">
+        <div class="pad2">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
+        </div>
+        <nav class="full" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul>
                 <li><a class="nav-element font" href="about.html">About</a></li>
@@ -27,13 +27,36 @@
         <!-- Mobile Menu -->
        <div class="mobile tablet">
         <input type="checkbox" id="overlay-input"/>
-        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <label for="overlay-input" id="overlay-button">
+            <span class="clicky"></span>
+    </label>
+
         <div id="overlay">
             <ul>
                 <li><a class="font nav-element whiteBorder" href="about.html">About</a></li>
                 <li><a class="font nav-element" href="index.html">Portfolio</a></li>
                 <li><a class="active font nav-element" href="contact.html">Contact</a></li>
             </ul>
+
+            <svg class="shape-overlays noPoint" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#00c99b"/>
+                    <stop offset="100%" stop-color="#ff0ea1"/>
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#ffd392"/>
+                    <stop offset="100%" stop-color="#ff3898"/>
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#110046"/>
+                    <stop offset="100%" stop-color="#32004a"/>
+                </linearGradient>
+                </defs>
+                <path class="shape-overlays__path" fill="url(#gradient1)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient2)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient3)"></path>
+            </svg>
         </div>
         </div>
         <!-- End Mobile Menu -->
@@ -43,43 +66,44 @@
     <h1 class="hidden">Matthew Tenuta Mail Form</h1>
 
 
-    <main class="main bckgrd">
-        <div class="one-item">
-            <h2 class="topPad2 botPad borderBottomWhite pad font">Let's Work Together!</h2>
-            <p class="botPad2 centerText wierdPad paragraphFont">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae aliquid eaque numquam facere ratione molestiae temporibus quibusdam, dolor voluptatibus cupiditate sed error expedita assumenda. Vitae nulla recusandae minima inventore?
-            </p>
+    <main class="main">
+        <div>
+            <div class="borderBottomWhite one-item">
+                <h2 class="topPad2 font centerText">Let's Work Together!</h2>
+            </div>
+            <div class="one-item">
+                <p class="botPad2 centerText wierdPad paragraphFont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae aliquid eaque numquam facere ratione molestiae temporibus quibusdam, dolor voluptatibus cupiditate sed error expedita assumenda. Vitae nulla recusandae minima inventore?
+                </p>
+            </div>
         </div>
 
         <form class="one-item" action="includes/mail/send.php" method="POST" id="mail-form">
             <div class="botPad">
-                <input class="mailInput borderRad" placeholder="First Name" ref="fname" type="text" id="firstname" name="firstname" required="required">
+                <input class="mailInput borderRad" ref="fname" placeholder="First Name"  type="text" id="firstname" name="firstname" required="required">
             </div>
 
             <div class="botPad">
-            <input class="mailInput borderRad" placeholder="Last Name" ref="lname" type="text" id="lastname" name="lastname" required>
+            <input class="mailInput borderRad" ref="lname" placeholder="Last Name" type="text" id="lastname" name="lastname" required>
             </div>
 
             <div class="botPad">
-            <input class="mailInput borderRad" placeholder="Email" ref="email" type="email" id="email" name="email" required>
+            <input class="mailInput borderRad" ref="email" placeholder="Email" type="email" id="email" name="email" required>
             </div>
 
             <div>
-            <textarea class="mailInput borderRad" placeholder="Tell me what's on your mind" ref="message" name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea class="mailInput borderRad" ref="message" placeholder="Tell me what's on your mind" name="message" id="message" cols="30" rows="10"></textarea>
             </div>
-            
-            <!-- <div class="wrapper">
-                <input @click.prevent="processMail" type="submit" class="submit" value="Send!">
-                <i class="fas fa-paper-plane"></i>
-                <div ref="emailMessage pad">
-                    <h2> Awaiting Input... </h2>
-                </div>
-            </div>  -->
-        </form>
 
-        <div class="one-item wierdPad2">
-            <input @click.prevent="processMail" type="submit" class="submitButton pad2" value="Send!">
-        </div>
+            <div class="wierdPad2">
+                <div class="pad">
+                    <input @click.prevent="processMail" type="submit" class="submitButton pad2" value="Send!">
+                </div>
+                <div class="centerText font" ref="emailMessage">
+                    <h2 class="font centerText"> Awaiting Input... </h2>
+                </div>
+            </div>
+        </form>
 
     </main>
     <footer class="foot footerColor">
@@ -95,6 +119,7 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="js/main.js" type="module" defer></script>
 </body>
 </html>

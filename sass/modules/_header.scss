@@ -2,13 +2,14 @@
 header {
     position: relative;
     top: 0em;
-    background-color: #7395F2;
     border-bottom: 1px solid #e6e6e6;
     box-shadow: 0px 5px 8px #888;
  }
 
  .logo {
   max-width: 150px;
+  animation-duration: 4s;
+  transition: .5s ease ;
  }
 
  .logo:hover {
@@ -16,16 +17,14 @@ header {
   background-color: #00aeef;
   position: relative;
   animation-name: example;
-  animation-duration: 4s;
   animation-iteration-count: infinite;
-  box-shadow: 0px 0px 10px 5px rgb(63, 63, 63);
-  
+  box-shadow: 0px 0px 10px 5px rgb(116, 115, 115);
 }
 
-.colourChange {
-  background-color: white;
+header img {
   width: 150px;
-  height: 102.717px;
+  max-height: 100px;
+  background-color: white;
 }
 
 nav ul {
@@ -37,7 +36,7 @@ nav ul {
 
  nav li {
     display: inline;
-    margin-right: 5em;
+    padding: 1em;
  }
 
  nav li a {
@@ -47,7 +46,21 @@ nav ul {
  }
 
 .nav-element {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+.nav-elementOverlay {
+  font-size: 2.5em;
+  transition: .5s ease ;
+}
+
+.shape-overlays {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* _____________________________________
@@ -148,7 +161,7 @@ nav ul {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #00aeef;
+    background-image: linear-gradient(to bottom, rgba(17,0,70), rgba(50,0,74));
     z-index: 2;
     visibility: hidden;
     position: absolute;
