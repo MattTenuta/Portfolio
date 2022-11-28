@@ -8,35 +8,59 @@
     <title>Matthew Tenuta Portfolio</title>
 </head>
 <body>
-    <header class="head">
-        <div class="pad2 one-item">
-            <a class="colourChange" href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
-            </div>
-        <nav class="one-item full" aria-label="Main Navigation">
+    <header class="head two-items">
+        <div class="pad2">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
+        </div>
+        <nav class="full" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul>
-                <li><a class="nav-element" href="about.html">About</a></li>
-                <li><a class="nav-element" href="index.html">Portfolio</a></li>
-                <li><a class="active nav-element" href="contact.html">Contact</a></li>
+                <li><a class="nav-element font" href="about.html">About</a></li>
+                <li><a class="nav-element font" href="index.html">Portfolio</a></li>
+                <li><a class="active nav-element font" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Mobile Menu -->
        <div class="mobile tablet">
         <input type="checkbox" id="overlay-input"/>
-        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <label for="overlay-input" id="overlay-button">
+            <span class="clicky"></span>
+    </label>
+
         <div id="overlay">
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="font nav-element whiteBorder" href="about.html">About</a></li>
+                <li><a class="font nav-element" href="index.html">Portfolio</a></li>
+                <li><a class="active font nav-element" href="contact.html">Contact</a></li>
             </ul>
+
+            <svg class="shape-overlays noPoint" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#00c99b"/>
+                    <stop offset="100%" stop-color="#ff0ea1"/>
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#ffd392"/>
+                    <stop offset="100%" stop-color="#ff3898"/>
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#110046"/>
+                    <stop offset="100%" stop-color="#32004a"/>
+                </linearGradient>
+                </defs>
+                <path class="shape-overlays__path" fill="url(#gradient1)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient2)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient3)"></path>
+            </svg>
         </div>
         </div>
         <!-- End Mobile Menu -->
     </header>
 
     <main id="app" class="main">
+        <h1 class="hidden">Matthew Tenuta Portfolio Index Page</h1>
         <section>
             <h2 class="hidden">Hero Image</h2>
             <div>
@@ -45,23 +69,27 @@
         </section>
 
         <section>
-            <h1 class="hidden">Portfolio Intro Paragraph</h1>
-            <div>
-                <h2></h2>
-                <p></p>
-            </div>
+            <h2 class="hidden">Portfolio Intro Paragraph</h2>
+                <h2>Hi There, Come On In!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
         </section>
 
         <section>
-            <h2 class="hidden">Portfolio Work</h2>
+            <nav>
+                <ul>
+                    <thepiecethumb @loadlbdata="loadLightbox" v-for="piece in pieceData" :piece="piece"></thepiecethumb>
+                </ul>
+            </nav>
         </section>
+
+        <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
 
     </main>
 
     <footer class="foot footerColor">
         <section class="two-items">
             <div class="flex">
-                <p class="footerText centerText pad2">Made With Love &#9829;</p>
+                <p class="footerText centerText pad2 font">Made With Love &#9829;</p>
             </div>
             <div class="flex imgCenter">
                 <a href="https://github.com/MattTenuta"><img class="git pad" src="images/github.svg" alt="GitHub Logo"></a>
@@ -69,6 +97,9 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
     
 </body>
 </html>
