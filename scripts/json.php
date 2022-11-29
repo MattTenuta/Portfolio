@@ -7,7 +7,7 @@
 
     $getContent = getAll('tbl_pieces');
     //$getContent = getSingle('tbl_pieces', 'piece_id', '4');
-    $label = "name";
+    $label = "title";
 
     /*$grpResult = "";
     $grpResult .= "{"; //Appends grpResult string

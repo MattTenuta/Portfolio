@@ -95,7 +95,7 @@ import LightBox from './components/theLightbox.js';
       created() {
         // fetch the remote data here and pass it to the data object
   
-        fetch('./data.json')
+        fetch('./scripts/json.php')
           .then(res => res.json())
           .then(data => this.pieceData = data)
             .catch(error => console.error(error));

@@ -24,7 +24,7 @@ export default {
 
         <article>
             <h2 class="lb_heading">{{ item.title }}</h2>
-            <p class="lb_text">{{ item.desc }}</p>
+            <p class="lb_text">{{ item.description }}</p>
             <p class="lb_text">{{ item.plan }}</p>
             <p class="lb_text">{{ item.software }}</p>
             <img :src='"images/" + item.lbpic1' alt="Portfolio Img">

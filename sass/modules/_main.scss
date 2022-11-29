@@ -90,7 +90,7 @@ input, textarea {
     padding-bottom: 1em;
   }
 
-  .botPad2 {
+  .botPad3 {
     padding-bottom: 5em;
   }
 
@@ -211,7 +211,7 @@ input, textarea {
             grid-column: 2 / span 2;
             grid-template-columns: repeat(1, 1fr);
             justify-content: space-evenly;
-            row-gap: 2em;
+            // row-gap: 1em;
           }
     
           .three-items {
@@ -224,6 +224,15 @@ input, textarea {
           }
     
           .four-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+
+          .four-itemsPiece {
             display: grid;
             grid-column: 2 / span 2;
             grid-template-columns: repeat(1, 1fr);
@@ -413,6 +422,15 @@ input, textarea {
           font-size: 1.2em;
         }
 
+        .me {
+          display: block;
+          width: 100%;
+        }
+
+        .meText {
+          padding: 1em;
+        }
+
         .heckYes {
          background-color: rgb(83, 83, 151);
          border-radius: 1.5em;
@@ -573,6 +591,15 @@ input, textarea {
           column-gap: 2em;
         }
 
+        .four-itemsPiece {
+          display: grid;
+          grid-column: 2 / span 2;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: space-evenly;
+          row-gap: 2em;
+          column-gap: 2em;
+        }
+
         .three-items {
           display: grid;
           grid-column: 2 / span 2;
@@ -670,6 +697,15 @@ input, textarea {
             display: grid;
             grid-column: 2 / span 2;
             grid-template-columns: repeat(4, 1fr) !important;
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+
+          .four-itemsPiece {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
             column-gap: 2em;
