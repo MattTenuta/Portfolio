@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
+
     <link rel="stylesheet" href="css/main.css">
     <title>Matthew Tenuta Portfolio</title>
 </head>
-<body>
+<body class="bckgrd">
     <header class="head two-items">
         <div class="pad2">
             <a href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
@@ -59,19 +64,34 @@
         <!-- End Mobile Menu -->
     </header>
 
-    <main id="app" class="main">
-        <h1 class="hidden">Matthew Tenuta Portfolio Index Page</h1>
-        <section>
-            <h2 class="hidden">Hero Image</h2>
-            <div>
-                <img>
-            </div>
-        </section>
+    <h1 class="hidden"> Matthew Tenuta Portfolio Index Page </h1>
 
-        <section>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img class="innout" alt="In N Out Tenuta Logo">
+                  </li>
+                  <li class="splide__slide">
+                    <img class="burger" alt="Burger King Tenuta Logo">
+                  </li>
+                  <li class="splide__slide">
+                    <img class="simpson" alt="Simpsons Tenuta Logo">
+                  </li>
+                  <li class="splide__slide">
+                    <img class="mcdonald" alt="McDonald Tenuta Logo">
+                  </li>
+              </ul>
+        </div>
+      </section>
+
+    <main id="app" class="main">
+
+        <section class="one-item pad2">
             <h2 class="hidden">Portfolio Intro Paragraph</h2>
-                <h2>Hi There, Come On In!</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                <h2 class="font center borderBottomThin">Hi There, Come On In!</h2>
+                <p class="pad2 paragraphFont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
         </section>
 
         <section>
@@ -99,6 +119,17 @@
     </footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+        type  : 'fade',
+        rewind: true,
+        } );
+        splide.mount();
+      </script>
+
     <script src="js/main.js" type="module" defer></script>
     
 </body>

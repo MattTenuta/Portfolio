@@ -90,6 +90,10 @@ input, textarea {
     padding-bottom: 1em;
   }
 
+  .botPad2 {
+    padding-bottom: 5em;
+  }
+
   .noLeftPad {
     padding-left: 1em;
   }
@@ -109,6 +113,7 @@ input, textarea {
   .botPad2 {
     padding-bottom: 2em;
   }
+
   .centerText {
     text-align: center;
   }
@@ -124,6 +129,8 @@ input, textarea {
 
   .imgCenter {
     margin: auto;
+    max-width: 200px;
+    display: grid;
   }
 
   .font {
@@ -135,8 +142,6 @@ input, textarea {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.4em;
     color: white;
-    display: grid;
-    grid-column: 2 / span 2;
     font-size: 1.2em;
   }
 
@@ -156,7 +161,6 @@ input, textarea {
   .noPoint {
     cursor: auto;
   }
-
 
   /*------------ Floats ------------*/
 
@@ -212,7 +216,7 @@ input, textarea {
           .three-items {
             display: grid;
             grid-column: 2 / span 2;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
             column-gap: 2em;
@@ -221,7 +225,7 @@ input, textarea {
           .four-items {
             display: grid;
             grid-column: 2 / span 2;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
             column-gap: 2em;
@@ -295,10 +299,54 @@ input, textarea {
           grid-column: 2 / span 2;
           margin-bottom: 1rem; /* google REM */
         }
-    
-        .hero-img > * {
-          grid-column: 1;
-          grid-row: 1;
+
+        /*------------ Splide Hero Img Carousel ------------*/
+
+        .splide {
+          max-width: 100%;
+          min-height: 200px;
+          overflow: hidden;
+          margin: 0 auto;
+        }
+
+        .innout {
+          content: url(/images/hero/in-n-out.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #e00c04;
+          border-top: 10px solid #e00c04;
+        }
+
+        .burger {
+          content: url(/images/hero/burger.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #f1863f;
+          border-top: 10px solid #f1863f;
+        }
+
+        .simpson {
+          content: url(/images/hero/simpson.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #f2d108;
+          border-top: 10px solid #f2d108;
+        }
+
+        .mcdonald {
+          content: url(/images/hero/mcdonald.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #585857;
+          border-top: 10px solid #585857;
         }
 
         .center {
@@ -342,13 +390,12 @@ input, textarea {
          font-size: 1.5em;
         }
 
-        .designText {
-         font-size: 1.5em;
-        }
-
         .programsText {
-          font-size: 1.5em;
+          font-size: 1.4em;
           text-align: center;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: white;
+          margin: 1.5em;
         }
 
         .contactText {
@@ -358,6 +405,13 @@ input, textarea {
         .heckYes {
          background-color: rgb(83, 83, 151);
          border-radius: 1.5em;
+         width: 70%;
+        }
+
+        .heckYes:hover {
+          box-shadow: 0px 0px 10px 5px rgb(24, 201, 224);
+          background-color: rgb(51, 8, 121);
+          transition: .5s ease-in-out ;
         }
 
         .borderRad {
@@ -366,6 +420,7 @@ input, textarea {
 
         .heckYesText {
          color: white;
+         font-size: 2em;
         }
 
         .heckYesText:hover {
@@ -399,6 +454,10 @@ input, textarea {
           color: white;
           font-weight: bolder;
           margin: auto;
+         }
+
+         .padSkill {
+          padding: .5em;
          }
     
        /*------------ End Mobile ------------*/
@@ -437,6 +496,60 @@ input, textarea {
         .hero-img {
           grid-column: span 4;
         }
+
+        .innout {
+          content: url(/images/hero/in-n-out2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
+        .burger {
+          content: url(/images/hero/burger2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
+        .simpson {
+          content: url(/images/hero/simpson2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
+        .mcdonald {
+          content: url(/images/hero/mcdonald2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
+        .four-items {
+          display: grid;
+          grid-column: 2 / span 2;
+          grid-template-columns: repeat(2, 1fr) !important;
+          justify-content: space-evenly;
+          row-gap: 2em;
+          column-gap: 2em;
+        }
+
+        .three-items {
+          display: grid;
+          grid-column: 2 / span 2;
+          grid-template-columns: repeat(3, .5fr);
+          justify-content: space-evenly;
+          row-gap: 2em;
+          column-gap: 2em;
+        }
+
+        .padSkill {
+          padding: 1em;
+         }
     
        }
     
@@ -467,6 +580,60 @@ input, textarea {
           .mobile {
             display: none;
           }
+
+          .innout {
+            content: url(/images/hero/in-n-out3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+  
+          .burger {
+            content: url(/images/hero/burger3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+  
+          .simpson {
+            content: url(/images/hero/simpson3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+  
+          .mcdonald {
+            content: url(/images/hero/mcdonald3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+
+          .four-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(4, 1fr) !important;
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+
+          .three-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+          }
+
+          .padSkill {
+            padding: 2em;
+           }
     
        }  
        
