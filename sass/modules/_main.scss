@@ -143,6 +143,7 @@ input, textarea {
     line-height: 1.4em;
     color: white;
     font-size: 1.2em;
+    width: 100%;
   }
 
   .bckgrd {
@@ -208,7 +209,7 @@ input, textarea {
           .two-items {
             display: grid;
             grid-column: 2 / span 2;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
           }
@@ -229,6 +230,16 @@ input, textarea {
             justify-content: space-evenly;
             row-gap: 2em;
             column-gap: 2em;
+          }
+
+          .four-itemsFoot {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+            padding: 1em;
           }
     
           .off-set-third {
@@ -348,7 +359,7 @@ input, textarea {
           border-bottom: 10px solid #585857;
           border-top: 10px solid #585857;
         }
-
+        
         .center {
          justify-self: center;
         }
@@ -448,13 +459,19 @@ input, textarea {
 
           .submitButton {
           border-radius: 0.5rem;
-          background-color: #78abeb;
+          background-color: rgb(83, 83, 151);
           cursor: pointer;
           font-size: 1.2em;
           color: white;
           font-weight: bolder;
           margin: auto;
          }
+
+         .submitButton:hover {
+          box-shadow: 0px 0px 10px 5px rgb(24, 201, 224);
+          background-color: rgb(51, 8, 121);
+          transition: .5s ease-in-out ;
+        }
 
          .padSkill {
           padding: .5em;
@@ -539,6 +556,14 @@ input, textarea {
           margin: 0 auto;
         }
 
+        .two-items {
+          display: grid;
+          grid-column: 2 / span 2;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: space-evenly;
+          column-gap: 5em;
+        }
+
         .four-items {
           display: grid;
           grid-column: 2 / span 2;
@@ -555,6 +580,16 @@ input, textarea {
           justify-content: space-evenly;
           row-gap: 2em;
           column-gap: 2em;
+        }
+
+        .four-itemsFoot {
+          display: grid;
+          grid-column: 2 / span 2;
+          grid-template-columns: repeat(4, 1fr);
+          justify-content: space-evenly;
+          row-gap: 2em;
+          column-gap: 2em;
+          padding: 1em;
         }
 
         .padSkill {
@@ -623,6 +658,14 @@ input, textarea {
             margin: 0 auto;
           }
 
+          .two-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            column-gap: 5em;
+          }
+
           .four-items {
             display: grid;
             grid-column: 2 / span 2;
@@ -632,6 +675,16 @@ input, textarea {
             column-gap: 2em;
           }
 
+          .four-itemsFoot {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+            padding: 1em;
+          }
+
           .three-items {
             display: grid;
             grid-column: 2 / span 2;
@@ -639,6 +692,15 @@ input, textarea {
             justify-content: space-evenly;
             row-gap: 2em;
             column-gap: 2em;
+          }
+
+          .three-itemsHead {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 1em;
+            column-gap: 1em;
           }
 
           .padSkill {
