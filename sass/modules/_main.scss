@@ -459,6 +459,16 @@ input, textarea {
          .padSkill {
           padding: .5em;
          }
+
+         .characters { list-style-type: none; }
+  
+          .characters li { 
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin: 10px 8px;
+            width: fit-content;
+          }
     
        /*------------ End Mobile ------------*/
     
