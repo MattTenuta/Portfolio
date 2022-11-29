@@ -141,5 +141,5 @@ import LightBox from './components/theLightbox.js';
                     .catch(err => this.processMailFailure(err));
             }
         }
-    }).mount('#app #mail-form')
+    }).mount('#app, #mail-form');
 })();
