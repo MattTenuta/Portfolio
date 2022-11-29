@@ -4,33 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>About Me!</title>
 </head>
-<body>
-    <header class="head">
-        <div class="pad2 one-item">
-            <a class="colourChange" href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
-            </div>
-        <nav class="one-item full" aria-label="Main Navigation">
+<body class="bckgrd">
+    <header class="head two-items">
+        <div class="pad2">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
+        </div>
+        <nav class="full" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul>
-                <li><a class="nav-element" href="about.html">About</a></li>
-                <li><a class="nav-element" href="index.html">Portfolio</a></li>
-                <li><a class="active nav-element" href="contact.html">Contact</a></li>
+                <li><a class="nav-element font" href="about.html">About</a></li>
+                <li><a class="nav-element font" href="index.html">Portfolio</a></li>
+                <li><a class="active nav-element font" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Mobile Menu -->
        <div class="mobile tablet">
         <input type="checkbox" id="overlay-input"/>
-        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <label for="overlay-input" id="overlay-button">
+            <span class="clicky"></span>
+    </label>
+
         <div id="overlay">
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="font nav-element whiteBorder" href="about.html">About</a></li>
+                <li><a class="font nav-element" href="index.html">Portfolio</a></li>
+                <li><a class="active font nav-element" href="contact.html">Contact</a></li>
             </ul>
+
+            <svg class="shape-overlays noPoint" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#00c99b"/>
+                    <stop offset="100%" stop-color="#ff0ea1"/>
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#ffd392"/>
+                    <stop offset="100%" stop-color="#ff3898"/>
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   stop-color="#110046"/>
+                    <stop offset="100%" stop-color="#32004a"/>
+                </linearGradient>
+                </defs>
+                <path class="shape-overlays__path" fill="url(#gradient1)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient2)"></path>
+                <path class="shape-overlays__path" fill="url(#gradient3)"></path>
+            </svg>
         </div>
         </div>
         <!-- End Mobile Menu -->
@@ -39,55 +66,71 @@
     <main class="main" id="app">
 
         <div class="topPad2">
-            <h2 class="one-item skillsTitle borderBottom">A Little About Myself</h2>
+            <h2 class="one-item font skillsTitle borderBottom">A Little About Myself</h2>
         </div>
         <section>
             <h2 class="hidden">About Me</h2>
             <div class="one-item pad">
                 <img class="aboutImg" src="images/480x480.png">
-                <p class="mobileAboutText topPad">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="mobileAboutText topPad paragraphFont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </section>
 
         <div></div> <!-- Bar -->
 
         <div class="one-item">
-            <h2 class="center skillsTitle borderBottom">The Skills That <br> Pay The Bills</h2>
-            <p class="pad center programsText">Listed below are some programs I am proficient in</p>
+            <h2 class="center skillsTitle borderBottom font">The Skills That Pay The Bills</h2>
+            <p class="center programsText">Listed below are some programs I am proficient in</p>
         </div>
         <section>
             <h2 class="hidden">Skills</h2>
                 <div class="one-item">
-                    <h3 class="center designTitle borderBottomThiner">Design Programs</h3>
+                    <h3 class="center designTitle font borderBottomThiner">Design Programs</h3>
                 </div>
-                    <div class="one-item pad">
-                        <img class="imgCenter" src="images/designLogos/photoshop.png">
-                        <h3 class="designText center borderBottomThin">Photoshop</h3>
-                        <img class="imgCenter" src="images/designLogos/illustrator.png">
-                        <h3 class="designText center borderBottomThin">Illustrator</h3>
-                        <img class="imgCenter" src="images/designLogos/xd.png">
-                        <h3 class="designText center borderBottomThin">XD</h3>
-                        <img class="imgCenter" src="images/designLogos/indesign.png">
-                        <h3 class="designText center borderBottomThin">InDesign</h3>
+                    <div class="four-items">
+                        <div class="padSkill">
+                            <img class="imgCenter" src="images/designLogos/photoshop.png">
+                            <h3 class="paragraphFont centerText">Photoshop</h3>
+                        </div>
+                        <div class="padSkill">
+                            <img class="imgCenter" src="images/designLogos/illustrator.png">
+                            <h3 class="paragraphFont centerText">Illustrator</h3>
+                        </div>
+                        <div class="padSkill">
+                            <img class="imgCenter" src="images/designLogos/xd.png">
+                            <h3 class="paragraphFont centerText">XD</h3>
+                        </div>
+                        <div class="padSkill">
+                            <img class="imgCenter" src="images/designLogos/indesign.png">
+                            <h3 class="paragraphFont centerText">InDesign</h3>
+                        </div>
                     </div>
                 <div class="one-item">
-                    <h3 class="center designTitle topPad2 borderBottomThiner">Motion Design Programs</h3>
+                    <h3 class="center font designTitle topPad2 borderBottomThiner">Motion Design Programs</h3>
                 </div>
-                <div class="one-item pad">
-                    <img class="imgCenter" src="images/designLogos/cinema.png">
-                    <h3 class="designText center borderBottomThin">Cinema 4D</h3>
-                    <img class="imgCenter" src="images/designLogos/afftereffects.png">
-                    <h3 class="designText center borderBottomThin">After Effects</h3>
-                    <img class="imgCenter" src="images/designLogos/premiere.png">
-                    <h3 class="designText center borderBottomThin">Premiere Pro</h3>
+                <div class="three-items pad">
+                    <div>
+                        <img class="imgCenter" src="images/designLogos/cinema.png">
+                        <h3 class="paragraphFont centerText">Cinema 4D</h3>
+                    </div>
+                    <div>
+                        <img class="imgCenter" src="images/designLogos/afftereffects.png">
+                        <h3 class="paragraphFont centerText">After Effects</h3>
+                    </div>
+                    <div>
+                        <img class="imgCenter" src="images/designLogos/premiere.png">
+                        <h3 class="paragraphFont centerText">Premiere Pro</h3>
+                    </div>
                 </div>
         </section>
 
         <div class="pad">
             <h3 class="hidden">Contact Button</h2>
-            <h2 class="one-item smallPad contactText center">Do You Want To Get In Contact?</h2>
-            <div class="heckYes pad one-item">
-                <a class="center" href="contact.html"><h2 class="heckYesText">Heck Yeah</h2></a>
+                <div class="one-item pad2">
+                    <h2 class="font smallPad borderBottomThin">Do You Want To Get In Contact?</h2>
+                </div>
+            <div class="one-item pad">
+                <a class="heckYes pad center" href="contact.html"><h2 class="font centerText">Heck Yeah</h2></a>
             </div> <!-- heck yes button -->
         </div>
     </main>
@@ -95,7 +138,7 @@
     <footer class="foot footerColor">
         <section class="two-items">
             <div class="flex">
-                <p class="footerText centerText pad2">Made With Love &#9829;</p>
+                <p class="footerText centerText pad2 font">Made With Love &#9829;</p>
             </div>
             <div class="flex imgCenter">
                 <a href="https://github.com/MattTenuta"><img class="git pad" src="images/github.svg" alt="GitHub Logo"></a>
@@ -103,6 +146,10 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="js/main.js" type="module" defer></script>
     
 </body>
 </html>

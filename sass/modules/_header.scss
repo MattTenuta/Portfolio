@@ -7,7 +7,7 @@ header {
  }
 
  .logo {
-  max-width: 150px;
+  max-width: 100px;
   animation-duration: 4s;
   transition: .5s ease ;
  }
@@ -198,6 +198,8 @@ nav ul {
   }
 
   #overlay ul li a:hover {
-    color: #333332;
+    color: #00aeef;
+    transition: ease-in-out .4s;
+    
   }
 
