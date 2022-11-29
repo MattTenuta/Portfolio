@@ -1,9 +1,10 @@
 {
     "DemoReel": {
         "title": "Demo Reel",
-        "desc": "",
-        "software": "",
+        "id": "demoreel",
+        "description": "",
         "plan": "",
+        "software": "",
         "thumbpic": "mini-electric.jpg",
         "lbpic1": "mini_electric_lbPic.jpg",
         "lbpic2": "mini-electric.jpg",
@@ -14,8 +15,10 @@
 
     "Sportsnet": {
         "title": "Sportsnet Intro",
-        "desc": "",
+        "id": "sportsnet",
+        "description": "",
         "plan": "",
+        "software": "",
         "thumbpic": "mini-3door.jpg",
         "lbpic1": "mini_3door_lbPic.jpg",
         "lbpic2": "mini-3door.jpg",
@@ -26,9 +29,10 @@
 
     "Morph": {
         "title": "Furnish Morph Commercial",
-        "desc": "",
-        "software": "",
+        "id": "morph",
+        "description": "",
         "plan": "",
+        "software": "",
         "thumbpic": "",
         "lbpic1": "",
         "lbpic2": "",
@@ -39,9 +43,10 @@
 
     "Seven": {
         "title": "Seven Cosmetics Commercial",
-        "desc": "",
-        "software": "",
+        "id": "seven",
+        "description": "",
         "plan": "",
+        "software": "",
         "thumbpic": "",
         "lbpic1": "",
         "lbpic2": "",
@@ -51,10 +56,11 @@
     },
 
     "Tylen-Ale": {
-        "title": "",
-        "desc": "",
-        "software": "",
+        "title": "Tylen Ale Beer",
+        "id": "tylenale",
+        "description": "",
         "plan": "",
+        "software": "",
         "thumbpic": "",
         "lbpic1": "",
         "lbpic2": "",

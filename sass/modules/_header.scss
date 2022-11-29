@@ -49,6 +49,11 @@ header img {
     font-size: 2.5em;
 }
 
+.nav-element:hover {
+    color: #00aeef;
+    transition: ease-in-out .3s;
+}
+
 .nav-elementOverlay {
   font-size: 2.5em;
   transition: .5s ease ;
@@ -133,7 +138,7 @@ header img {
   }
 
   #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
-    background: #333332;
+    background: #11b4d1;
   }
   
   input[type=checkbox] {
@@ -197,9 +202,21 @@ header img {
     line-height: 2em;
   }
 
-  #overlay ul li a:hover {
-    color: #00aeef;
-    transition: ease-in-out .4s;
+  #overlay .tab1:hover {
+    color: #00c99b;
+    transition: ease-in-out .3s;
+    
+  }
+
+  #overlay .tab2:hover {
+    color: #ffd392;
+    transition: ease-in-out .3s;
+    
+  }
+
+  #overlay .tab3:hover {
+    color: #ff3898;
+    transition: ease-in-out .3s;
     
   }
 
