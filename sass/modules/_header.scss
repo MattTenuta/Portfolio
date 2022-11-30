@@ -9,7 +9,7 @@ header {
  .logo {
   max-width: 100px;
   animation-duration: 4s;
-  transition: .5s ease ;
+  transition: .7s ease ;
  }
 
  .logo:hover {
@@ -19,6 +19,7 @@ header {
   animation-name: example;
   animation-iteration-count: infinite;
   box-shadow: 0px 0px 10px 5px rgb(116, 115, 115);
+  scale: 110%;
 }
 
 header img {
@@ -47,6 +48,7 @@ header img {
 
 .nav-element {
     font-size: 2.5em;
+    transition: ease-in-out .3s;
 }
 
 .nav-element:hover {

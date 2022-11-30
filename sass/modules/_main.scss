@@ -424,10 +424,15 @@ input, textarea {
 
         .me {
           display: block;
-          width: 100%;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+
         }
 
         .meText {
+          margin-left: auto;
+          margin-right: auto;
           padding: 1em;
         }
 
@@ -435,12 +440,14 @@ input, textarea {
          background-color: rgb(83, 83, 151);
          border-radius: 1.5em;
          width: 70%;
+         transition: .5s ease-in-out ;
         }
 
         .heckYes:hover {
           box-shadow: 0px 0px 10px 5px rgb(24, 201, 224);
           background-color: rgb(51, 8, 121);
           transition: .5s ease-in-out ;
+          scale: 110%;
         }
 
         .borderRad {
@@ -450,10 +457,13 @@ input, textarea {
         .heckYesText {
          color: white;
          font-size: 2em;
+         transition: .5s ease-in-out ;
         }
 
         .heckYesText:hover {
           color: #00aeef;
+          transition: .5s ease-in-out ;
+          scale: 110%;
          }
 
          .mailInput {
@@ -483,11 +493,13 @@ input, textarea {
           color: white;
           font-weight: bolder;
           margin: auto;
+          transition: .5s ease-in-out ;
          }
 
          .submitButton:hover {
           box-shadow: 0px 0px 10px 5px rgb(24, 201, 224);
           background-color: rgb(51, 8, 121);
+          scale: 110%;
           transition: .5s ease-in-out ;
         }
 
@@ -503,6 +515,106 @@ input, textarea {
             cursor: pointer;
             margin: 10px 8px;
             width: fit-content;
+          }
+
+          /*     About Page Design Logo Styling     */
+
+          .designImgPhoto {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgPhoto:hover {
+            box-shadow: 0px 0px 10px 5px #55a0d7;
+            background-color: #061f34;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgIllus {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgIllus:hover {
+            box-shadow: 0px 0px 10px 5px #f7991c;
+            background-color: #2c100f;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgIndes {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgIndes:hover {
+            box-shadow: 0px 0px 10px 5px #e64869;
+            background-color: #401020;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgXd {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgXd:hover {
+            box-shadow: 0px 0px 10px 5px #ff61f6;
+            background-color: #470137;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgC4d {
+            max-width: 175px;
+            border-radius: 8em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgC4d:hover {
+            box-shadow: 0px 0px 10px 5px #6171d8;
+            background-color: #313da6;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgAe {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgAe:hover {
+            box-shadow: 0px 0px 10px 5px #9b99ff;
+            background-color: #01005c;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+          }
+
+          .designImgPrem {
+            max-width: 175px;
+            border-radius: 2em;
+            transition: .5s ease-in-out ;
+          }
+  
+          .designImgPrem:hover {
+            box-shadow: 0px 0px 10px 5px #9796c9;
+            background-color: #1f1c58;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
           }
     
        /*------------ End Mobile ------------*/
@@ -622,6 +734,12 @@ input, textarea {
         .padSkill {
           padding: 1em;
          }
+
+         .me {
+          display: block;
+          width: 100%;
+
+        }
     
        }
     
@@ -742,6 +860,12 @@ input, textarea {
           .padSkill {
             padding: 2em;
            }
+
+           .me {
+            display: block;
+            width: 100%;
+  
+          }
     
        }  
        
