@@ -1,8 +1,8 @@
 .lightbox {
     // display: none;
   
-    width: 125vw;
-    height: 250vh;
+    width: auto;
+    height: auto;
   
     position: absolute;
     left: 0;
@@ -11,6 +11,11 @@
   
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 5000;
+}
+
+.lbImg {
+  width: 300px;
+  height: auto;
 }
 
 .lightbox_close { 
@@ -29,13 +34,11 @@
   
   .lightbox article {
     padding-top: 50px;
-    width: 60em;
     height: fit-content;
   }
   
   .lb_text, .lb_heading { 
     text-align: left;
-    color: white;
     margin: auto;
     padding-left: 2em;
     padding-right: 2em;
