@@ -1,12 +1,12 @@
 <?php
 
 //Turn on error reporting     Comment this out when its live
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//error_reporting(E_ALL);
 
 // Setup Connection Creds
-$user = "MattTenuta";
-$pass = "Y@y3eT$!";
+$user = "";
+$pass = "";
 $url = "localhost";
 $db = "db_fip";
 

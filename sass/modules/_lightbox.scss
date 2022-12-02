@@ -10,10 +10,19 @@
   
     background-color: rgba(40, 85, 137, 0.95);
     z-index: 5000;
+    
+}
+
+input
+
+.fluid {
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-template-columns: 1fr;
 }
 
 .lbFont {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .lbTitle {
@@ -24,10 +33,6 @@
   background-color: #30B6F1;
 }
 
-.lbImg {
-  max-width: 100%;
-  height: auto;
-}
 
 .lightbox_close { 
     position: sticky ;

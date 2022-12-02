@@ -96,13 +96,21 @@
 
         <section class="one-item pad2">
             <h2 class="hidden">Portfolio Intro Paragraph</h2>
-                <h2 class="font center borderBottomThin">Hi There, Come On In!</h2>
+                <h2 class="font center borderBottomThin Title">Hi There, Come On In!</h2>
                 <p class="pad2 paragraphFont">Welcome to my portfolio website. Here you can find many wonderous things such as my work, a little about myself, and a contact form just waiting for you to fill it out.<br><br>
                     So what are you waiting for, dive in and thanks for coming to my website 😊
                      </p>
         </section>
 
-        <article>
+        <section class="one-item pad2">
+            <h2 class="hidden">Portfolio Intro Paragraph</h2>
+                <h2 class="font center borderBottomThin Title">Check Out My Demo Reel!</h2>
+                <div class="displayG pad">
+                    <video controls><source src="/video/tenuta_matthew_demo_reel.mp4"></video>'
+                </div>
+        </section>
+
+        <article class="one-item">
             <nav class="pieceSpace">
                 <ul class="characters four-itemsPiece">
                     <thepiecethumb @loadlbdata="loadLightbox" v-for="piece in pieceData" :piece="piece"></thepiecethumb>
@@ -110,7 +118,7 @@
             </nav></a>
         </article>
 
-        <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
+        <thelightbox class="fluid" @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
 
     </main>
 
