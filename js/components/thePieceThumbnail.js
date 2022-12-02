@@ -8,8 +8,8 @@ export default {
     },
 
     template: `
-    <li @click="loadLBData">
-        <img :src='"images/" + piece.thumbpic' alt="Portfolio Img" style="width: 300px">
+    <li @click="loadLBData"><a href="#top">
+        <img :src='"images/" + piece.thumbpic' alt="Portfolio Img" style="width: 300px"></a>
     </li>
     `,
 

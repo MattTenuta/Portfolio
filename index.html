@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,13 +94,13 @@
                 <p class="pad2 paragraphFont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
         </section>
 
-        <section>
-            <nav>
+        <article>
+            <nav class="pieceSpace">
                 <ul class="characters four-itemsPiece">
                     <thepiecethumb @loadlbdata="loadLightbox" v-for="piece in pieceData" :piece="piece"></thepiecethumb>
                 </ul>
-            </nav>
-        </section>
+            </nav></a>
+        </article>
 
         <thelightbox @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
 

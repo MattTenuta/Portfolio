@@ -2,6 +2,10 @@
 Accessibility
 --------------------------------------------------------------*/
 
+html thepiecethumb {
+  scroll-behavior: smooth;
+}
+
 /* Text meant only for screen readers */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -637,7 +641,7 @@ input, textarea {
         .mobile {
           display: grid;
         }
-    
+
         /* Hero */
     
         .hero-img {
@@ -854,7 +858,20 @@ input, textarea {
            .me {
             display: block;
             width: 100%;
-  
+          }
+
+          .pieceSpace {
+            grid-column: 1 / span 4;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          article nav ul li:hover {
+            opacity: 50%;
+            scale: 110%;
+            transition: .5s ease-in-out ;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 5px rgb(24, 201, 224);
           }
     
        }  

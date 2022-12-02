@@ -1,6 +1,6 @@
 .lightbox {
     // display: none;
-    max-width: 100%;
+    max-width: 2000px;
     height: auto;
   
     position: absolute;
@@ -138,40 +138,6 @@
           }
         }
       }
-    }
-
-    @media screen and (min-width: 48em) and (max-width: 63.98em) {
-
-      .lightbox {
-        // display: none;
-        max-width: 2000px;
-        height: auto;
-      
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 2em;
-      
-        background-color: rgba(40, 85, 137, 0.95);
-        z-index: 5000;
-    }
-
-    }
-
-    @media screen and (min-width: 64em) {
-      .lightbox {
-        // display: none;
-        max-width: 4000px;
-        height: auto;
-      
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 2em;
-      
-        background-color: rgba(40, 85, 137, 0.95);
-        z-index: 5000;
-    }
     }
 
   }
