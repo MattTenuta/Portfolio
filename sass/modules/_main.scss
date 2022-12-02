@@ -167,6 +167,12 @@ input, textarea {
     cursor: auto;
   }
 
+  .pieceSpace {
+    margin: 0 auto;
+    display: grid;
+    grid-column: 2 /span 2;
+  }
+
   /*------------ Floats ------------*/
 
   .f-left {
