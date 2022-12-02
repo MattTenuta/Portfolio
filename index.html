@@ -13,6 +13,7 @@
     <title>Matthew Tenuta Portfolio</title>
 </head>
 <body class="bckgrd">
+    <h2 class="hidden"> Main Site Container </h2>
     <header class="head three-itemsHead">
         <div class="pad2">
             <a href="index.html"><img class="logo" src="images/logo.png" alt="Matthew Tenuta Logo"></a>
@@ -67,7 +68,7 @@
     <h1 class="hidden"> Matthew Tenuta Portfolio Index Page </h1>
 
     <section class="splide" aria-label="Splide Basic HTML Example">
-
+        <h3 class="hidden">Image Carousel</h3>
         <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide">
@@ -96,22 +97,22 @@
 
         <section class="one-item pad2">
             <h2 class="hidden">Portfolio Intro Paragraph</h2>
-                <h2 class="font center borderBottomThin Title">Hi There, Come On In!</h2>
+                <h3 class="font center borderBottomThin Title">Hi There, Come On In!</h3>
                 <p class="pad2 paragraphFont">Welcome to my portfolio website. Here you can find many wonderous things such as my work, a little about myself, and a contact form just waiting for you to fill it out.<br><br>
                     So what are you waiting for, dive in and thanks for coming to my website 😊
                      </p>
         </section>
 
         <section class="one-item pad2">
-            <h2 class="hidden">Portfolio Intro Paragraph</h2>
-                <h2 class="font center borderBottomThin Title">Check Out My Demo Reel!</h2>
+            <h2 class="hidden">Demo Reel</h2>
+                <h3 class="font center borderBottomThin Title">Check Out My Demo Reel!</h3>
                 <div class="displayG pad">
                     <video controls><source src="/video/tenuta_matthew_demo_reel.mp4"></video>'
                 </div>
         </section>
 
-        <article class="one-item">
-            <nav class="pieceSpace">
+        <article class="one-item"><h2 class="hidden">Portfolio</h2>
+            <nav class="pieceSpace"><h3 class="hidden">Portfolio Pieces</h3>
                 <ul class="characters four-itemsPiece">
                     <thepiecethumb @loadlbdata="loadLightbox" v-for="piece in pieceData" :piece="piece"></thepiecethumb>
                 </ul>
@@ -124,6 +125,7 @@
 
     <footer class="foot footerColor">
         <section class="four-itemsFoot topPad2">
+            <h2 class="hidden">Footer</h2>
             <div class="flex">
                 <p class="footerText centerText pad2 font">Made With Love &#9829;</p>
             </div>
