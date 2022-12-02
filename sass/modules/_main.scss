@@ -147,7 +147,6 @@ input, textarea {
     line-height: 1.4em;
     color: white;
     font-size: 1.2em;
-    width: 100%;
   }
 
   .bckgrd {
@@ -361,6 +360,26 @@ input, textarea {
 
         .mcdonald {
           content: url(/images/hero/mcdonald.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #585857;
+          border-top: 10px solid #585857;
+        }
+
+        .mastercard {
+          content: url(/images/hero/mastercard.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+          border-bottom: 10px solid #585857;
+          border-top: 10px solid #585857;
+        }
+
+        .dominos {
+          content: url(/images/hero/dominos.jpg);
           max-width: 100%;
           display: grid;
           grid-column: 2 / span 2;
@@ -686,6 +705,22 @@ input, textarea {
           margin: 0 auto;
         }
 
+        .mastercard {
+          content: url(/images/hero/mastercard2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
+        .dominos {
+          content: url(/images/hero/dominos2.jpg);
+          max-width: 100%;
+          display: grid;
+          grid-column: 2 / span 2;
+          margin: 0 auto;
+        }
+
         .two-items {
           display: grid;
           grid-column: 2 / span 2;
@@ -797,6 +832,22 @@ input, textarea {
   
           .mcdonald {
             content: url(/images/hero/mcdonald3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+
+          .mastercard {
+            content: url(/images/hero/mastercard3.jpg);
+            max-width: 100%;
+            display: grid;
+            grid-column: 2 / span 2;
+            margin: 0 auto;
+          }
+
+          .dominos {
+            content: url(/images/hero/dominos3.jpg);
             max-width: 100%;
             display: grid;
             grid-column: 2 / span 2;
