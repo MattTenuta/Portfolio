@@ -205,6 +205,12 @@ input, textarea {
             grid-column: 2 / span 2;
             grid-template-columns: 1fr;
           }
+
+          .one-itemLB {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: 1fr;
+          }
     
           .two-items {
             display: grid;
@@ -249,22 +255,6 @@ input, textarea {
             row-gap: 2em;
             column-gap: 2em;
             padding: 1em;
-          }
-    
-          .off-set-third {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: .3fr .7fr;
-            row-gap: 2em;
-            column-gap: 2em;
-          }
-    
-          .third-off-set {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: .7fr .3fr;
-            row-gap: 2em;
-            column-gap: 2em;
           }
     
           @media screen and (max-width: 47.9375em) {

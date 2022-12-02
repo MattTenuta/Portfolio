@@ -1,7 +1,6 @@
 .lightbox {
     // display: none;
-  
-    width: auto;
+    max-width: 100%;
     height: auto;
   
     position: absolute;
@@ -9,12 +8,24 @@
     top: 0;
     padding: 2em;
   
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(40, 85, 137, 0.95);
     z-index: 5000;
 }
 
+.lbFont {
+  font-size: 1.5em;
+}
+
+.lbTitle {
+  font-size: 2.5em;
+}
+
+.blueLB {
+  background-color: #30B6F1;
+}
+
 .lbImg {
-  width: 300px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -32,22 +43,24 @@
     transform: scale(-1, 1); 
   }
   
-  .lightbox article {
+  .lightbox section {
     padding-top: 50px;
     height: fit-content;
+    margin-right: 8%;
   }
   
-  .lb_text, .lb_heading { 
+  .lb_heading { 
     text-align: left;
-    margin: auto;
-    padding-left: 2em;
-    padding-right: 2em;
+    color: white;
+    font-size: 2em;
   }
   
   .lb_text { 
     line-height: 1.6;
     padding-top: 2em;
-    font-size: 2em;
+    font-size: 1em;
+    text-align: left;
+    color: white;
   }
 
   /* Close Button */
@@ -126,4 +139,39 @@
         }
       }
     }
+
+    @media screen and (min-width: 48em) and (max-width: 63.98em) {
+
+      .lightbox {
+        // display: none;
+        max-width: 2000px;
+        height: auto;
+      
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2em;
+      
+        background-color: rgba(40, 85, 137, 0.95);
+        z-index: 5000;
+    }
+
+    }
+
+    @media screen and (min-width: 64em) {
+      .lightbox {
+        // display: none;
+        max-width: 4000px;
+        height: auto;
+      
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2em;
+      
+        background-color: rgba(40, 85, 137, 0.95);
+        z-index: 5000;
+    }
+    }
+
   }
